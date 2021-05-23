@@ -33,6 +33,12 @@ class PuppiesTableViewController: UITableViewController {
 
         cell.textLabel?.text = allPuppies[indexPath.row].title
         
+        cell.detailTextLabel?.text = allPuppies[indexPath.row].text
+        
+        cell.imageView?.image = UIImage(named: allPuppies[indexPath.row].image)
+        
+//        cell.detailTextLabel?.numberOfLines = 0
+        
         //This will make each cell say Section # Row #
 
         return cell
@@ -45,3 +51,4 @@ class PuppiesTableViewController: UITableViewController {
 
 
 }
+//<div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
